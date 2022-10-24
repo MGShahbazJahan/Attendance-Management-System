@@ -43,4 +43,4 @@
   + os
   + express-session
 * If you want to use MongoDBcompass for this project then create a database in the shell containing data present in DB folder. After creating the Database in MongoDBCompass in app.js change the url variable to access the local MongoDB.
-* After all the above step are completed, you are ready to host the website on your localhost. TO do that run the following command 'node app.js'
+* After all the above step are completed, you are ready to host the website on your localhost. To do that run the following command 'node app.js'
