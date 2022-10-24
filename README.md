@@ -26,3 +26,20 @@
 
 
 ![image](https://user-images.githubusercontent.com/73573498/174485492-8a99c66e-25ba-4836-bc1f-5c46386bea63.png)
+
+
+## Instructions to run the project in your machine
+* Install nodejs through your browser.
+* Use the following commands to install the node modules.
+* npm i <module_name>
+* Modules to be installed are : 
+  + mongoose
+  + MongoClient
+  + express
+  + morgan
+  + body-parser
+  + path
+  + os
+  + express-session
+* If you want to use MongoDBcompass for this project then create a database in the shell containing data present in DB folder. After creating the Database in MongoDBCompass in app.js change the url variable to access the local MongoDB.
+* After all the above step are completed, you are ready to host the website on your localhost. TO do that run the following command 'node app.js'
