@@ -7,8 +7,9 @@ const path = require('path');
 const { devNull } = require('os');
 const { GridFSBucket } = require('mongodb');
 const { redirect } = require('express/lib/response');
-const url = 'mongodb://localhost:27017/';
-const databasename = 'firstdb';
+// const url = 'mongodb://localhost:27017/';
+const url = 'mongodb+srv://shahbazjahan9:shahbazjahan9@cluster0.vb8fvg4.mongodb.net/?retryWrites=true&w=majority';
+const databasename = 'attendance_management';
 const session = require('express-session');
 const app = express();
 app.use(bodyParser.json());
@@ -28,7 +29,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 MongoClient.connect(url, function (err, db) {
     if (err) throw err;
-    var dbo = db.db('firstdb');
+    var dbo = db.db(databasename);
     // var query={username:"160120733050"};
     // dbo.collection("login").find(query).toArray(function(err,result){
     //     if (err) throw err;
@@ -68,22 +69,22 @@ app.get('/', function (req, res) {
 app.post('/check', function (req, res) {
     let uname = req.body.username;
     let pword = req.body.password;
-    // console.log(uname);
-    // console.log(pword);
+    // console.log("entered username",uname);
+    // console.log("entered password",pword);
     if (uname && pword) {
 
         MongoClient.connect(url, function (err, db) {
             if (err) throw err;
-            dbo = db.db("firstdb");
+            dbo = db.db(databasename);
             var query = { username: uname };
             dbo.collection("login").find(query).toArray(function (err, result) {
+                // console.log(result[0].username);
+                // console.log(result[0].password);
                 if (result.length == 0) {
                     res.sendFile(__dirname + '/login1.html');
                 }
                 else {
                     if (err) throw err;
-                    // console.log(result[0].username);
-                    // console.log(result[0].password);
                     else {
                         if (result[0].password == pword && result[0].type == "student") {
                             req.session.loggedin = true;
@@ -118,7 +119,7 @@ app.get('/student-home', function (req, res) {
         var percentage2 = 0;
         MongoClient.connect(url, function (err, db) {
             if (err) throw err;
-            dbo = db.db("firstdb");
+            dbo = db.db(databasename);
             var query = { sid: uname, course: "iwt" };
             dbo.collection("attendance").find(query).toArray(function (err, result1) {
                 if (err) throw err;
@@ -187,7 +188,7 @@ app.get('/teacher-class2', function (req, res) {
     if (req.session.loggedin) {
         res.render(__dirname + "/teacher_class2.ejs", { uname: uname });
     } else {
-        res.sendfile("notloggedin.html");
+        res.sendFile(__dirname + "notloggedin.html");
     }
 });
 app.get('/teacher-form', function (req, res) {
@@ -259,7 +260,7 @@ app.post('/attendance-submit', function (req, res) {
         console.log(req.body.attendance2);
         MongoClient.connect(url, function (err, db) {
             if (err) throw err;
-            dbo = db.db("firstdb");
+            dbo = db.db(databasename);
             var myobj = { tid: tid, sid: n1, date: req.session.date, present: req.body.attendance1 };
             dbo.collection("attendance").insertOne(myobj, function (err, res) {
                 if (err) throw err;

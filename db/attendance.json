@@ -6,7 +6,8 @@
   "sid": "160120733050",
   "hour": "2",
   "date": "08-06-2022",
-  "present": "1"
+  "present": "1",
+  "course":"iwt"
 },{
   "_id": {
     "$oid": "62a01429a5883cb2478bdfde"
@@ -15,7 +16,8 @@
   "sid": "160120733049",
   "hour": "2",
   "date": "08-06-2022",
-  "present": "0"
+  "present": "0",
+  "course":"iwt"
 },{
   "_id": {
     "$oid": "62a014430a1210ebec68730b"
@@ -24,7 +26,9 @@
   "sid": "160120733037",
   "hour": "2",
   "date": "08-06-2022",
-  "present": "1"
+  "present": "1",
+  "course":"iwt"
+
 },{
   "_id": {
     "$oid": "62a01457e092c42039ba2e3f"
@@ -33,7 +37,9 @@
   "sid": "160120733004",
   "hour": "2",
   "date": "08-06-2022",
-  "present": "1"
+  "present": "1",
+  "course":"iwt"
+
 },{
   "_id": {
     "$oid": "62a0146501ef7ded08820c3a"
@@ -42,7 +48,9 @@
   "sid": "160120733003",
   "hour": "2",
   "date": "08-06-2022",
-  "present": "0"
+  "present": "0",
+  "course":"iwt"
+
 },{
   "_id": {
     "$oid": "62a0146f5d2d47960a6b3643"
@@ -51,7 +59,9 @@
   "sid": "160120733035",
   "hour": "2",
   "date": "08-06-2022",
-  "present": "0"
+  "present": "0",
+  "course":"iwt"
+
 },{
   "_id": {
     "$oid": "62a015135788530d9c5fa5bd"
@@ -60,7 +70,8 @@
   "sid": "160120733050",
   "hour": "1",
   "date": "08-06-2022",
-  "present": "0"
+  "present": "0",
+  "course":"daa"
 },{
   "_id": {
     "$oid": "62a01520ffeb663cd0820924"
@@ -69,7 +80,8 @@
   "sid": "160120733049",
   "hour": "1",
   "date": "08-06-2022",
-  "present": "0"
+  "present": "0",
+  "course":"daa"
 },{
   "_id": {
     "$oid": "62a0152b174c0c0a56494209"
@@ -78,7 +90,8 @@
   "sid": "160120733037",
   "hour": "1",
   "date": "08-06-2022",
-  "present": "0"
+  "present": "0",
+  "course":"daa"
 },{
   "_id": {
     "$oid": "62a0153499dd2a260943c3b0"
@@ -87,7 +100,8 @@
   "sid": "160120733035",
   "hour": "1",
   "date": "08-06-2022",
-  "present": "1"
+  "present": "1",
+  "course":"daa"
 },{
   "_id": {
     "$oid": "62a0153ca53c4c184a628eff"
@@ -96,7 +110,8 @@
   "sid": "160120733004",
   "hour": "1",
   "date": "08-06-2022",
-  "present": "1"
+  "present": "1",
+  "course":"daa"
 },{
   "_id": {
     "$oid": "62a015413aedda8a774eaac5"
@@ -105,53 +120,67 @@
   "sid": "160120733003",
   "hour": "1",
   "date": "08-06-2022",
-  "present": "1"
+  "present": "1",
+  "course":"daa"
+
 },{
   "_id": {
     "$oid": "62a44eeeaffef2a4346cea75"
   },
   "tid": "1001",
   "sid": "160120733003",
+  "hour":"1",
   "date": "10-06-2022",
-  "present": "1"
+  "present": "1",
+  "course":"iwt"
 },{
   "_id": {
     "$oid": "62a44eeeaffef2a4346cea76"
   },
   "tid": "1001",
   "sid": "160120733004",
+  "hour":"1",
   "date": "10-06-2022",
-  "present": "1"
+  "present": "1",
+  "course":"iwt"
 },{
   "_id": {
     "$oid": "62a44eeeaffef2a4346cea79"
   },
   "tid": "1001",
   "sid": "160120733049",
+  "hour":"1",
   "date": "10-06-2022",
-  "present": "1"
+  "present": "1",
+  "course":"iwt"
 },{
   "_id": {
     "$oid": "62a44eeeaffef2a4346cea7a"
   },
   "tid": "1001",
   "sid": "160120733050",
+  "hour":"1",
   "date": "10-06-2022",
-  "present": "1"
+  "present": "1",
+  "course":"iwt"
 },{
   "_id": {
     "$oid": "62a44eeeaffef2a4346cea77"
   },
   "tid": "1001",
   "sid": "160120733035",
+  "hour":"1",
   "date": "10-06-2022",
-  "present": "1"
+  "present": "1",
+  "course":"iwt"
 },{
   "_id": {
     "$oid": "62a44eeeaffef2a4346cea78"
   },
   "tid": "1001",
   "sid": "160120733037",
+  "hour":"1",
   "date": "10-06-2022",
-  "present": "1"
+  "present": "1",
+  "course":"iwt"
 }]
