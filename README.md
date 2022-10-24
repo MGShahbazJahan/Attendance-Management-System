@@ -34,6 +34,7 @@
 * npm i <module_name>
 * Modules to be installed are : 
   + mongoose
+  + mongodb
   + MongoClient
   + express
   + morgan
