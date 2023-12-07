@@ -33,9 +33,7 @@
 * Use the following commands to install the node modules.
 * npm i <module_name>
 * Modules to be installed are : 
-  + mongoose
   + mongodb
-  + MongoClient
   + express
   + morgan
   + body-parser
